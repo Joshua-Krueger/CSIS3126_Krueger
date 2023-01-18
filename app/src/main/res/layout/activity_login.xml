@@ -38,6 +38,7 @@
         android:backgroundTint="#805B9D87"
         android:ems="10"
         android:hint="@string/password"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -46,8 +47,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextContrastCheck"
-        android:importantForAutofill="no" />
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/loginEmail"
@@ -58,6 +58,7 @@
         android:backgroundTint="#805B9D87"
         android:ems="10"
         android:hint="@string/email"
+        android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -65,8 +66,7 @@
         app:layout_constraintBottom_toTopOf="@+id/loginPass"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextContrastCheck"
-        android:importantForAutofill="no" />
+        tools:ignore="TextContrastCheck" />
 
     <CheckBox
         android:id="@+id/rememberMeCheck"
@@ -85,15 +85,17 @@
         tools:ignore="TextContrastCheck" />
 
     <ImageView
-        android:id="@+id/appLogo"
+        android:id="@+id/LoginLogo"
         android:layout_width="188dp"
-        android:layout_height="187dp"
+        android:layout_height="188dp"
+        android:layout_marginTop="50dp"
         android:contentDescription="@string/app_logo"
         app:layout_constraintBottom_toTopOf="@+id/loginEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/app_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
